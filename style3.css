@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff7e6;
+}
+button{
+    background-color: #d63384;
+    color: white;
+     border-radius: 10px;
+    height: 50px;
+    width: 100px;
+}
+
+h1{
+    text-align: center;
+    color: #7b3f00;
+    margin-top: 30px;
+}
+
+/* GRID: 3 cards per row */
+.cake-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* CARD DESIGN */
+.cake-card{
+    background-color: #f8c8dc;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ff6fa5;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cake-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* IMAGE */
+.cake-card img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.cake-card h3{
+    color: #5a2d0c;
+    margin: 10px 0 5px;
+}
+
+.cake-card p{
+    font-size: 14px;
+    color: #7b1e3b;
+}
